@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Novo Recomeço — Candidatura APEE · EB do Bairro do Restelo</title>
+<meta name="description" content="Candidatura à Associação de Pais e Encarregados de Educação da EB do Bairro do Restelo, ano letivo 2026/2027.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0E2A3D;
+    --ink-2:#123449;
+    --paper:#F8F8F3;
+    --paper-2:#F1F2EA;
+    --card:#FFFFFF;
+    --line:#DFE3D8;
+    --moss:#4F6B52;
+    --moss-light:#E3EADD;
+    --sunrise-1:#FF8B5E;
+    --sunrise-2:#FFC468;
+    --sunrise-3:#F0567F;
+    --text:#22322F;
+    --muted:#5B6E68;
+    --radius:18px;
+    --maxw:1160px;
+    --serif:"Fraunces", Georgia, serif;
+    --sans:"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
+  }
+
+  body{
+    margin:0;
+    font-family:var(--sans);
+    color:var(--text);
+    background:var(--paper);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  h1,h2,h3{
+    font-family:var(--serif);
+    color:var(--ink);
+    margin:0;
+    font-weight:600;
+    letter-spacing:-0.01em;
+  }
+
+  a{color:inherit;}
+
+  img,svg{display:block; max-width:100%;}
+
+  .wrap{
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:0 28px;
+  }
+
+  .eyebrow{
+    font-family:var(--sans);
+    font-size:0.78rem;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:0.14em;
+    color:var(--sunrise-3);
+    margin:0 0 12px;
+  }
+  section .eyebrow.on-dark{ color:var(--sunrise-2); }
+
+  /* ---------- Skip link ---------- */
+  .skip-link{
+    position:absolute; left:-999px; top:auto;
+    background:var(--ink); color:#fff; padding:12px 18px; border-radius:0 0 10px 0; z-index:200;
+  }
+  .skip-link:focus{ left:0; top:0; }
+
+  /* ---------- Nav ---------- */
+  header.site{
+    position:sticky; top:0; z-index:100;
+    background:rgba(248,248,243,0.86);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 28px;
+    max-width:var(--maxw); margin:0 auto;
+  }
+  .brand{
+    display:flex; align-items:center; gap:10px;
+    font-family:var(--serif); font-weight:600; font-size:1.05rem; color:var(--ink);
+    text-decoration:none;
+  }
+  .brand .dot{
+    width:10px; height:10px; border-radius:50%;
+    background:linear-gradient(135deg, var(--sunrise-1), var(--sunrise-2));
+    flex:none;
+  }
+  nav.links{ display:flex; gap:28px; align-items:center; }
+  nav.links a{
+    text-decoration:none; color:var(--ink-2); font-size:0.93rem; font-weight:500;
+    padding:6px 2px; border-bottom:2px solid transparent;
+    transition:border-color .2s ease, color .2s ease;
+  }
+  nav.links a:hover, nav.links a:focus-visible{ border-color:var(--sunrise-1); }
+  .nav-cta{
+    background:var(--ink); color:#fff !important; padding:9px 18px !important;
+    border-radius:100px; border-bottom:none !important; font-weight:600 !important;
+  }
+  .nav-cta:hover{ background:var(--ink-2); }
+
+  .burger{
+    display:none; background:none; border:none; cursor:pointer; padding:6px;
+    flex-direction:column; gap:5px;
+  }
+  .burger span{ width:24px; height:2px; background:var(--ink); display:block; }
+
+  @media (max-width: 860px){
+    nav.links{
+      position:fixed; inset:64px 0 auto 0; background:var(--paper);
+      flex-direction:column; align-items:flex-start; gap:0;
+      padding:8px 28px 20px; border-bottom:1px solid var(--line);
+      transform:translateY(-8px); opacity:0; pointer-events:none;
+      transition:transform .25s ease, opacity .25s ease;
+    }
+    nav.links.open{ transform:translateY(0); opacity:1; pointer-events:auto; }
+    nav.links a{ width:100%; padding:12px 0; border-bottom:1px solid var(--line); }
+    nav.links a.nav-cta{ border-bottom:none !important; margin-top:10px; text-align:center; }
+    .burger{ display:flex; }
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;
+    overflow:hidden;
+    background:var(--ink);
+    color:#fff;
+    padding:96px 0 0;
+  }
+  .hero-inner{
+    max-width:var(--maxw); margin:0 auto; padding:0 28px 120px;
+    position:relative; z-index:3;
+    display:grid; grid-template-columns:1fr; gap:20px;
+  }
+  .hero .eyebrow{ color:var(--sunrise-2); }
+  .hero h1{
+    color:#fff;
+    font-size:clamp(2.5rem, 5.6vw, 4.3rem);
+    line-height:1.05;
+    max-width:16ch;
+  }
+  .hero h1 em{
+    font-style:italic;
+    background:linear-gradient(100deg, var(--sunrise-1), var(--sunrise-2));
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  .hero p.lead{
+    max-width:52ch; font-size:1.15rem; color:#DCE7E2; margin-top:6px;
+  }
+  .hero-actions{ display:flex; gap:14px; flex-wrap:wrap; margin-top:18px; }
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:14px 26px; border-radius:100px; font-weight:600; font-size:0.98rem;
+    text-decoration:none; border:1px solid transparent; cursor:pointer;
+    transition:transform .18s ease, background .18s ease, border-color .18s ease;
+  }
+  .btn:hover{ transform:translateY(-2px); }
+  .btn-primary{
+    background:linear-gradient(100deg, var(--sunrise-1), var(--sunrise-2));
+    color:var(--ink);
+  }
+  .btn-ghost{
+    background:transparent; color:#fff; border-color:rgba(255,255,255,0.35);
+  }
+  .btn-ghost:hover{ border-color:#fff; }
+  .btn-dark{ background:var(--ink); color:#fff; }
+  .btn-dark:hover{ background:var(--ink-2); }
+
+  .hero-meta{
+    margin-top:56px; display:flex; gap:36px; flex-wrap:wrap;
+    border-top:1px solid rgba(255,255,255,0.18); padding-top:22px;
+    font-size:0.9rem; color:#C9D6D0;
+  }
+  .hero-meta strong{ display:block; color:#fff; font-family:var(--serif); font-size:1.4rem; font-weight:600; }
+
+  /* Dawn arc signature */
+  .dawn{
+    position:absolute; left:0; right:0; bottom:0; height:340px; z-index:1;
+    pointer-events:none;
+  }
+  .dawn svg{ width:100%; height:100%; }
+
+  /* ---------- Section shell ---------- */
+  section{ padding:96px 0; }
+  section.tight{ padding:72px 0; }
+  .section-head{
+    max-width:640px; margin-bottom:52px;
+  }
+  .section-head h2{ font-size:clamp(1.8rem, 3.4vw, 2.5rem); }
+  .section-head p{ color:var(--muted); font-size:1.05rem; margin-top:14px; }
+
+  .alt{ background:var(--paper-2); }
+  .dark{ background:var(--ink); color:#fff; }
+  .dark h2, .dark h3{ color:#fff; }
+  .dark p{ color:#CBD8D2; }
+
+  /* ---------- Missão cards ---------- */
+  .triad{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:24px;
+  }
+  @media (max-width:860px){ .triad{ grid-template-columns:1fr; } }
+  .mv-card{
+    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    padding:34px 30px; position:relative;
+  }
+  .mv-card .badge{
+    width:46px; height:46px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--serif); font-weight:600; font-size:1rem;
+    background:var(--moss-light); color:var(--moss); margin-bottom:20px;
+  }
+  .mv-card h3{ font-size:1.3rem; margin-bottom:10px; }
+  .mv-card p{ color:var(--muted); font-size:0.98rem; }
+
+  /* ---------- Abordagem timeline (process) ---------- */
+  .process{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:22px; counter-reset:step;
+  }
+  @media (max-width:900px){ .process{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:560px){ .process{ grid-template-columns:1fr; } }
+  .step{
+    background:var(--card); border-radius:var(--radius); padding:28px 24px;
+    border:1px solid var(--line); position:relative;
+  }
+  .step .num{
+    font-family:var(--serif); font-size:2.1rem; font-weight:600; color:var(--sunrise-3);
+    display:block; margin-bottom:14px;
+  }
+  .step h3{ font-size:1.12rem; margin-bottom:8px; }
+  .step p{ color:var(--muted); font-size:0.94rem; }
+
+  .diff-line{
+    margin-top:40px; padding:26px 30px; border-radius:var(--radius);
+    background:var(--moss-light); color:var(--ink);
+    font-family:var(--serif); font-style:italic; font-size:1.15rem;
+    max-width:760px;
+  }
+
+  /* ---------- Commitment band ---------- */
+  .commit-band{
+    background:var(--ink); color:#fff; border-radius:22px;
+    padding:32px 36px; display:flex; align-items:center; gap:22px;
+  }
+  .commit-icon{
+    width:56px; height:56px; border-radius:50%; flex:none;
+    background:linear-gradient(135deg, var(--sunrise-1), var(--sunrise-2));
+    display:flex; align-items:center; justify-content:center;
+  }
+  .commit-band p{ margin:0; font-size:1.05rem; color:#E4ECE6; line-height:1.65; }
+  .commit-band strong{ color:#fff; }
+  @media (max-width:640px){
+    .commit-band{ flex-direction:column; align-items:flex-start; padding:26px; }
+  }
+
+  /* ---------- Eixos ---------- */
+  .cat-group{ margin-bottom:44px; }
+  .cat-group:last-child{ margin-bottom:0; }
+  .cat-title{
+    display:flex; align-items:center; gap:12px; margin-bottom:18px;
+  }
+  .cat-title .swatch{ width:12px; height:12px; border-radius:3px; flex:none; }
+  .cat-title h3{ font-size:1.15rem; font-weight:600; color:var(--ink); }
+  .cat-title span.count{ color:var(--muted); font-size:0.88rem; }
+
+  .axis-card{
+    background:var(--card); border:1px solid var(--line); border-radius:16px;
+    margin-bottom:12px; overflow:hidden;
+  }
+  .axis-card summary{
+    list-style:none; cursor:pointer; padding:20px 22px;
+    display:flex; align-items:center; gap:16px; justify-content:space-between;
+  }
+  .axis-card summary::-webkit-details-marker{ display:none; }
+  .axis-left{ display:flex; align-items:center; gap:16px; min-width:0; }
+  .mono{
+    width:42px; height:42px; border-radius:50%; flex:none;
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--serif); font-weight:600; font-size:0.92rem;
+    color:#fff;
+  }
+  .axis-title{ font-weight:600; color:var(--ink); font-size:1.02rem; }
+  .axis-sub{ color:var(--muted); font-size:0.88rem; margin-top:2px; }
+  .chev{
+    width:20px; height:20px; flex:none; position:relative;
+  }
+  .chev::before, .chev::after{
+    content:""; position:absolute; width:10px; height:2px; background:var(--ink); top:9px;
+    transition:transform .2s ease;
+  }
+  .chev::before{ left:0; transform:rotate(45deg); }
+  .chev::after{ right:0; transform:rotate(-45deg); }
+  details[open] .chev::before{ transform:rotate(-45deg); }
+  details[open] .chev::after{ transform:rotate(45deg); }
+
+  .axis-body{
+    padding:0 22px 24px 78px; color:var(--text); font-size:0.96rem;
+  }
+  .axis-body ul{ margin:0; padding-left:18px; }
+  .axis-body li{ margin-bottom:9px; color:var(--text); }
+  .axis-body li::marker{ color:var(--sunrise-3); }
+  .axis-note{
+    margin-top:14px; padding:14px 16px; border-radius:10px; background:var(--paper-2);
+    font-size:0.9rem; color:var(--muted); font-style:italic;
+  }
+
+  @media (max-width:560px){
+    .axis-body{ padding-left:22px; }
+  }
+
+  /* ---------- Contactos ---------- */
+  .contact-grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:14px;
+  }
+  @media (max-width:760px){ .contact-grid{ grid-template-columns:1fr; } }
+  .contact-item{
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:18px 20px;
+  }
+  .contact-item .who{ font-weight:600; color:var(--ink); font-size:0.96rem; margin-bottom:4px; }
+  .contact-item .how{ color:var(--muted); font-size:0.9rem; word-break:break-word; }
+  .contact-note{
+    margin-top:20px; font-size:0.9rem; color:var(--muted); font-style:italic;
+  }
+
+  /* ---------- Cronograma ---------- */
+  .timeline{ position:relative; padding-left:26px; }
+  .timeline::before{
+    content:""; position:absolute; left:6px; top:6px; bottom:6px; width:2px;
+    background:var(--line);
+  }
+  .tl-item{ position:relative; padding-bottom:34px; }
+  .tl-item:last-child{ padding-bottom:0; }
+  .tl-item::before{
+    content:""; position:absolute; left:-26px; top:4px; width:14px; height:14px; border-radius:50%;
+    background:linear-gradient(135deg, var(--sunrise-1), var(--sunrise-2));
+    border:3px solid var(--paper);
+    box-shadow:0 0 0 1px var(--line);
+  }
+  .tl-item .when{
+    font-family:var(--serif); font-weight:600; color:var(--ink); font-size:1.15rem; margin-bottom:4px;
+  }
+  .tl-item p{ color:var(--muted); margin:0; max-width:60ch; }
+
+  /* ---------- Inquerito ---------- */
+  .survey{
+    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    padding:10px 8px;
+  }
+  .survey ol{ margin:0; padding:0; list-style:none; counter-reset:q; }
+  .survey li{
+    counter-increment:q;
+    display:flex; gap:16px; align-items:flex-start;
+    padding:16px 22px; border-bottom:1px solid var(--line);
+  }
+  .survey li:last-child{ border-bottom:none; }
+  .survey li::before{
+    content:counter(q);
+    font-family:var(--serif); font-weight:600; color:var(--sunrise-3);
+    font-size:1rem; flex:none; width:24px;
+  }
+
+  /* ---------- Talent CTA band ---------- */
+  .band{
+    background:var(--moss); color:#fff; border-radius:24px;
+    padding:44px 40px; display:flex; align-items:center; justify-content:space-between;
+    gap:24px; flex-wrap:wrap;
+  }
+  .band h3{ color:#fff; font-size:1.5rem; margin-bottom:8px; }
+  .band p{ color:#DCE9DB; margin:0; max-width:46ch; }
+
+  /* ---------- Progress dashboard ---------- */
+  .progress-dash{
+    display:flex; align-items:center; gap:48px; flex-wrap:wrap;
+    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    padding:34px 38px; margin-bottom:36px;
+  }
+  .progress-ring-wrap{ position:relative; width:160px; height:160px; flex:none; }
+  .progress-ring{ width:160px; height:160px; }
+  #ringFg{ transition:stroke-dashoffset .5s ease; }
+  .progress-ring-label{
+    position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center;
+  }
+  .progress-ring-label span{ font-family:var(--serif); font-size:2rem; font-weight:600; color:var(--ink); }
+  .progress-ring-label small{ color:var(--muted); font-size:0.8rem; }
+  .progress-cats{ flex:1; min-width:240px; display:flex; flex-direction:column; gap:16px; }
+  .pcat-row{ display:flex; flex-direction:column; gap:6px; }
+  .pcat-top{ display:flex; justify-content:space-between; font-size:0.9rem; color:var(--ink); font-weight:600; }
+  .pcat-top span.pct{ color:var(--muted); font-weight:500; }
+  .pcat-bar{ height:8px; border-radius:100px; background:var(--paper-2); overflow:hidden; }
+  .pcat-bar-fg{ height:100%; border-radius:100px; transition:width .5s ease; }
+
+  .quadro-groups{ display:flex; flex-direction:column; gap:28px; }
+  .qgroup-title{ display:flex; align-items:center; gap:10px; margin-bottom:12px; font-size:1.02rem; font-weight:600; color:var(--ink); }
+  .qgroup-title .swatch{ width:11px; height:11px; border-radius:3px; }
+  .qlist{ display:flex; flex-direction:column; gap:8px; }
+  .qitem{
+    display:flex; align-items:flex-start; gap:14px;
+    background:var(--card); border:1px solid var(--line); border-radius:12px;
+    padding:14px 18px; cursor:pointer;
+  }
+  .qitem input[type=checkbox]{
+    width:20px; height:20px; margin-top:1px; flex:none; accent-color:var(--sunrise-3); cursor:pointer;
+  }
+  .qitem span.qlabel{ font-size:0.95rem; color:var(--text); line-height:1.5; }
+  .qitem.done span.qlabel{ color:var(--muted); text-decoration:line-through; }
+
+  /* ---------- Org charts ---------- */
+  .org-subtitle{ font-size:1.15rem; font-weight:600; color:var(--ink); margin-bottom:20px; font-family:var(--serif); }
+  .orgchart{ display:flex; flex-direction:column; align-items:center; gap:0; }
+  .org-level{ display:flex; justify-content:center; gap:16px; flex-wrap:wrap; width:100%; }
+  .org-level-wide{ gap:16px; }
+  .org-connector{ width:2px; height:26px; background:var(--line); }
+  .org-connector-dashed{ background:repeating-linear-gradient(to bottom, var(--line) 0 5px, transparent 5px 10px); }
+  .org-box{
+    background:var(--card); border:1px solid var(--line); border-radius:12px;
+    padding:14px 20px; font-size:0.92rem; font-weight:600; color:var(--ink);
+    text-align:center; min-width:180px; display:flex; flex-direction:column; gap:4px; align-items:center;
+  }
+  .org-box span{ font-weight:400; color:var(--muted); font-size:0.8rem; }
+  .org-primary{ background:var(--ink); color:#fff; border-color:var(--ink); }
+  .org-dashed{ border-style:dashed; border-color:var(--sunrise-2); background:#FFF7EE; }
+  .org-tbd{ border-style:dashed; border-color:var(--moss); background:var(--moss-light); color:var(--moss); }
+  .org-tbd span{ color:#6E8A70; }
+  .org-caption{ text-align:center; color:var(--muted); font-size:0.88rem; margin-top:20px; font-style:italic; max-width:640px; margin-left:auto; margin-right:auto; }
+  @media (max-width:760px){
+    .org-box{ min-width:0; width:100%; max-width:320px; }
+  }
+
+  /* ---------- Documents grid ---------- */
+  .doc-grid{ display:flex; flex-direction:column; gap:12px; }
+  .doc-card .axis-body p{ margin:0 0 10px; }
+  .doc-card .axis-body p:last-child{ margin-bottom:10px; }
+
+  /* ---------- Forms ---------- */
+  .form-shell{
+    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    padding:36px; max-width:720px;
+  }
+  .form-row{ margin-bottom:20px; }
+  .form-row label{ display:block; font-size:0.88rem; font-weight:600; color:var(--ink); margin-bottom:7px; }
+  .form-row input[type=text], .form-row input[type=email], .form-row textarea, .form-row select{
+    width:100%; border:1px solid var(--line); border-radius:10px; padding:12px 14px;
+    font-family:var(--sans); font-size:0.95rem; color:var(--text); background:#fff;
+  }
+  .form-row textarea{ resize:vertical; min-height:90px; }
+  .form-check-grid{ display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+  @media (max-width:560px){ .form-check-grid{ grid-template-columns:1fr; } }
+  .form-check{ display:flex; align-items:center; gap:9px; font-size:0.9rem; color:var(--text); }
+  .form-check input{ width:17px; height:17px; accent-color:var(--sunrise-3); }
+  .form-radio-row{ display:flex; flex-direction:column; gap:8px; }
+  .form-radio{ display:flex; align-items:flex-start; gap:9px; font-size:0.92rem; color:var(--text); }
+  .form-radio input{ margin-top:3px; accent-color:var(--sunrise-3); }
+  .form-note{ font-size:0.82rem; color:var(--muted); margin-top:6px; }
+  .form-submit-row{ display:flex; align-items:center; gap:16px; flex-wrap:wrap; margin-top:8px; }
+
+  .qa-block{ margin-bottom:34px; }
+  .qa-block:last-child{ margin-bottom:0; }
+  .qa-block .qtitle{ font-weight:600; color:var(--ink); margin-bottom:12px; font-size:1rem; }
+
+  /* ---------- Footer / closing ---------- */
+  .closing{
+    background:var(--ink); color:#fff; position:relative; overflow:hidden;
+    padding:100px 0 60px;
+  }
+  .closing .dawn{ opacity:0.5; height:260px; }
+  .closing-inner{ position:relative; z-index:2; text-align:center; }
+  .closing h2{ color:#fff; font-size:clamp(1.9rem,4vw,2.8rem); max-width:18ch; margin:0 auto 16px; }
+  .closing p{ color:#CBD8D2; max-width:52ch; margin:0 auto 30px; font-size:1.08rem; }
+  .closing .btn-primary{ margin:0 auto; }
+
+  footer.legal{
+    border-top:1px solid rgba(255,255,255,0.15); margin-top:70px; padding-top:26px;
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;
+    font-size:0.84rem; color:#93A5A0; position:relative; z-index:2;
+  }
+
+  /* ---------- Reveal on scroll ---------- */
+  .reveal{ opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s ease; }
+  .reveal.in{ opacity:1; transform:translateY(0); }
+
+  /* focus visibility */
+  a:focus-visible, button:focus-visible, summary:focus-visible{
+    outline:3px solid var(--sunrise-1); outline-offset:2px;
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+
+<header class="site">
+  <div class="nav">
+    <a class="brand" href="#topo"><span class="dot"></span>Novo Recomeço</a>
+    <button class="burger" id="burgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="links" id="navLinks">
+      <a href="#missao">Missão</a>
+      <a href="#eixos">Eixos</a>
+      <a href="#progresso">Progresso</a>
+      <a href="#documentos">Documentos</a>
+      <a href="#faq">Perguntas</a>
+      <a href="#organizacao">Organização</a>
+      <a href="#contactos">Contactos</a>
+      <a href="#juntar" class="nav-cta">Juntar-me</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- HERO -->
+  <section class="hero" id="topo">
+    <div class="hero-inner">
+      <p class="eyebrow">Candidatura APEE · 2026/2027</p>
+      <h1>Um <em>novo começo</em> para a Associação de Pais</h1>
+      <p class="lead">EB do Bairro do Restelo — Agrupamento de Escolas do Restelo. Mais escuta, mais colaboração e soluções concretas para as crianças e para as famílias.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#eixos">Ver os eixos de atuação</a>
+        <a class="btn btn-ghost" href="#inquerito">Responder ao inquérito</a>
+      </div>
+      <div class="hero-meta">
+        <div><strong>16</strong>eixos de atuação</div>
+        <div><strong>3+4</strong>salas de Pré-Escolar &amp; turmas 1.º–4.º ano</div>
+        <div><strong>1</strong>comunidade, muitas competências</div>
+      </div>
+    </div>
+    <div class="dawn" aria-hidden="true">
+      <svg viewBox="0 0 1200 340" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="sunGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#FFC468"/>
+            <stop offset="100%" stop-color="#FF8B5E"/>
+          </linearGradient>
+          <linearGradient id="hillGrad1" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#173C51"/>
+            <stop offset="100%" stop-color="#0E2A3D"/>
+          </linearGradient>
+        </defs>
+        <circle cx="600" cy="330" r="150" fill="url(#sunGrad)" opacity="0.9"/>
+        <path d="M0,260 C150,210 300,240 460,215 C620,190 700,235 860,205 C1000,180 1100,215 1200,195 L1200,340 L0,340 Z" fill="url(#hillGrad1)"/>
+        <path d="M0,300 C180,270 340,300 520,270 C700,240 820,290 1000,265 C1080,253 1140,270 1200,258 L1200,340 L0,340 Z" fill="#0E2A3D"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- COMPROMISSO -->
+  <section class="tight" style="padding-top:64px; padding-bottom:0;">
+    <div class="wrap">
+      <div class="commit-band reveal">
+        <div class="commit-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="30" height="30" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M24 40s-16-9.5-16-21A9 9 0 0 1 24 13a9 9 0 0 1 16 6c0 11.5-16 21-16 21Z"/>
+          </svg>
+        </div>
+        <p>Queremos estar <strong>unidos</strong> e ajudar todos os que necessitam — desde a entrada até à permanência nas escolas do Agrupamento. O nosso compromisso é <strong>agilizar e facilitar</strong> todos os processos, <strong>apresentar informação</strong> clara e <strong>esclarecer dúvidas</strong>, para que nenhuma família se sinta sozinha no caminho.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSAO -->
+
+  <section id="missao">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Quem somos</p>
+        <h2>Missão, visão e valores</h2>
+        <p>A nossa diferença está em não sermos apenas uma lista de pessoas — mas uma rede de competências ao serviço da escola, das crianças e das famílias.</p>
+      </div>
+      <div class="triad">
+        <div class="mv-card reveal">
+          <div class="badge">M</div>
+          <h3>Missão</h3>
+          <p>Representar as famílias junto da escola, do Agrupamento e das entidades locais, e construir uma rede de competências ao serviço das crianças.</p>
+        </div>
+        <div class="mv-card reveal">
+          <div class="badge">V</div>
+          <h3>Visão</h3>
+          <p>Uma escola com mais escuta, mais colaboração e soluções simples e concretas, onde cada família sabe que a Associação está presente no dia a dia.</p>
+        </div>
+        <div class="mv-card reveal">
+          <div class="badge">V</div>
+          <h3>Valores</h3>
+          <p>Escuta ativa, proximidade, transparência, inclusão e participação — construir com as famílias, não apenas para as famílias.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABORDAGEM -->
+  <section id="abordagem" class="alt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Como vamos trabalhar</p>
+        <h2>Ouvir primeiro, agir depois</h2>
+        <p>Antes de fechar prioridades, começamos por perceber o que as famílias realmente sentem falta — e só depois organizamos, escolhemos e agimos.</p>
+      </div>
+      <div class="process">
+        <div class="step reveal">
+          <span class="num">01</span>
+          <h3>Ouvir</h3>
+          <p>Inquérito e conversas informais com as famílias: o que falta, o que preocupa, o que sugerem.</p>
+        </div>
+        <div class="step reveal">
+          <span class="num">02</span>
+          <h3>Organizar</h3>
+          <p>Agrupar as respostas por áreas — comunicação, bem-estar, atividades, inclusão, convívio.</p>
+        </div>
+        <div class="step reveal">
+          <span class="num">03</span>
+          <h3>Priorizar</h3>
+          <p>Escolher poucas ações bem feitas, em vez de prometer tudo de uma vez.</p>
+        </div>
+        <div class="step reveal">
+          <span class="num">04</span>
+          <h3>Executar</h3>
+          <p>Definir responsáveis por área e comunicar com clareza a todas as famílias.</p>
+        </div>
+      </div>
+      <p class="diff-line reveal">"Mais do que pais, somos uma comunidade — queremos ouvir as crianças e criar iniciativas que façam sentido para todos."</p>
+    </div>
+  </section>
+
+  <!-- EIXOS -->
+  <section id="eixos">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">O plano</p>
+        <h2>16 eixos de atuação</h2>
+        <p>Organizados em quatro frentes de trabalho. Toque em cada eixo para ver os próximos passos propostos.</p>
+      </div>
+
+      <!-- Governação -->
+      <div class="cat-group reveal">
+        <div class="cat-title">
+          <span class="swatch" style="background:var(--ink)"></span>
+          <h3>Governação &amp; transparência</h3>
+          <span class="count">2 eixos</span>
+        </div>
+
+        <details class="axis-card">
+          <summary>
+            <div class="axis-left">
+              <span class="mono" style="background:var(--ink)">CD</span>
+              <div>
+                <div class="axis-title">Comunicação com a Direção</div>
+                <div class="axis-sub">Articulação entre a Associação, a coordenação e o Agrupamento</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body">
+            <ul>
+              <li>Lugar fixo na ordem de trabalhos do Conselho Geral — a Associação de Pais tem, por lei, representação neste órgão.</li>
+              <li>Canal regular (reunião trimestral ou newsletter) entre a Direção, a coordenadora da escola e a Associação.</li>
+              <li>Coordenação com as APEE das outras escolas do Agrupamento — Moinhos do Restelo, Caselas, JI de Belém, Paula Vicente — para reivindicações conjuntas.</li>
+              <li>Filiação na CONFAP, que dá apoio jurídico e formativo e representa os pais junto do Ministério da Educação.</li>
+            </ul>
+            <p class="axis-note">Há precedente: em 2019, três APEE do Bairro do Restelo reuniram-se em conjunto com a Direção e a Junta sobre obras necessárias.</p>
+          </div>
+        </details>
+
+        <details class="axis-card">
+          <summary>
+            <div class="axis-left">
+              <span class="mono" style="background:var(--ink)">TF</span>
+              <div>
+                <div class="axis-title">Transparência financeira</div>
+                <div class="axis-sub">Contas claras e acessíveis a todas as famílias</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body">
+            <ul>
+              <li>Apresentação anual de contas em Assembleia Geral, com relatório de receitas e despesas.</li>
+              <li>Orçamento do ano seguinte disponibilizado por escrito a todos os encarregados de educação.</li>
+              <li>Responsável de tesouraria definido, com um segundo elemento para verificação de contas.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+
+      <!-- Segurança e bem-estar -->
+      <div class="cat-group reveal">
+        <div class="cat-title">
+          <span class="swatch" style="background:var(--moss)"></span>
+          <h3>Segurança &amp; bem-estar</h3>
+          <span class="count">4 eixos</span>
+        </div>
+
+        <details class="axis-card">
+          <summary>
+            <div class="axis-left">
+              <span class="mono" style="background:var(--moss)">ES</span>
+              <div>
+                <div class="axis-title">Controlo de entradas e saídas</div>
+                <div class="axis-sub">Registo e segurança na entrega das crianças a partir do 1.º ano</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body">
+            <ul>
+              <li>Registo de entrada/saída por um auxiliar no portão, confirmando quem entrega e quem recolhe a criança.</li>
+              <li>Lista de pessoas autorizadas a recolher a criança, com verificação de cartão de cidadão quando não é pessoa habitual.</li>
+              <li>Canal de comunicação direto com a escola para situações excecionais (atraso, pessoa não habitual).</li>
+              <li>Reforço de auxiliares nos momentos de entrada e saída.</li>
+            </ul>
+            <p class="axis-note">Não depende de financiamento externo — proposto como item concreto para a primeira reunião com a coordenação.</p>
+          </div>
+        </details>
+
+        <details class="axis-card">
+          <summary>
+            <div class="axis-left">
+              <span class="mono" style="background:var(--moss)">IN</span>
+              <div>
+                <div class="axis-title">Infraestruturas</div>
+                <div class="axis-sub">Casas de banho e manutenção do espaço escolar</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body">
+            <ul>
+              <li>Reporte formal e por escrito, com registo de data, à coordenadora da escola.</li>
+              <li>Encaminhamento à Junta de Freguesia de Belém e/ou à Câmara Municipal de Lisboa.</li>
+              <li>Pedido de resposta com prazo definido e follow-up regular.</li>
+              <li>Audiência ao Presidente da Junta se não houver resposta; linha munícipe / Lisboa Aberta como último recurso.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="axis-card">
+          <summary>
+            <div class="axis-left">
+              <span class="mono" style="background:var(--moss)">NE</span>
+              <div>
+                <div class="axis-title">Necessidades Educativas Especiais</div>
+                <div class="axis-sub">Apoio, inclusão e pressão institucional</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body">
+            <ul>
+              <li>Levantamento interno, via inquérito, das dificuldades sentidas pelas famílias.</li>
+              <li>Pedido formal à DGEstE / Ministério da Educação para reforço de auxiliares dedicados e melhor rácio nos intervalos.</li>
+              <li>Reivindicação reforçada em conjunto com outras APEE e através da CONFAP.</li>
+              <li>Parceria com a Liga de Melhoramentos e Recreios de Algés, que já tem atividade motora adaptada.</li>
+              <li>Possibilidade de reunião com o Provedor do Aluno ou apresentação ao Conselho Nacional de Educação.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="axis-card">
+          <summary>
+            <div class="axis-left">
+              <span class="mono" style="background:var(--moss)">SF</span>
+              <div>
+                <div class="axis-title">Saúde e formações facultativas</div>
+                <div class="axis-sub">Primeiros socorros, nutrição e gestão emocional</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body">
+            <ul>
+              <li>Cruz Vermelha — Suporte Básico de Vida, SBV com DAE e Socorrismo Pediátrico (15h), o mais indicado para pais de crianças pequenas.</li>
+              <li>INEM — ações de sensibilização em SBV e uso de DAE.</li>
+              <li>Centro de Saúde local — saúde infantil, vacinação, alimentação e saúde oral.</li>
+              <li>Psicólogo escolar — birras, ecrãs e sono infantil, em articulação com o SPO do Agrupamento.</li>
+              <li>PSP (Escola Segura) — segurança rodoviária e cadeirinhas auto.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+
+      <!-- Comunidade e atividades -->
+      <div class="cat-group reveal">
+        <div class="cat-title">
+          <span class="swatch" style="background:var(--sunrise-3)"></span>
+          <h3>Comunidade &amp; atividades</h3>
+          <span class="count">5 eixos</span>
+        </div>
+
+        <details class="axis-card">
+          <summary>
+            <div class="axis-left">
+              <span class="mono" style="background:var(--sunrise-3)">BT</span>
+              <div>
+                <div class="axis-title">Banco de Talentos das Famílias</div>
+                <div class="axis-sub">Cada família contribui à sua medida</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body">
+            <ul>
+              <li>Lista de pais e mães disponíveis para partilhar a sua profissão numa "aula surpresa".</li>
+              <li>Registo aberto a diferentes níveis de disponibilidade: uma ideia, um contacto, apoio logístico.</li>
+              <li>Atividade simples de organizar e muito valorizada pelas crianças.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="axis-card">
+          <summary>
+            <div class="axis-left">
+              <span class="mono" style="background:var(--sunrise-3)">DP</span>
+              <div>
+                <div class="axis-title">Desporto</div>
+                <div class="axis-sub">Parcerias com clubes locais</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body">
+            <ul>
+              <li>"Os Belenenses" — escolas de futebol no Estádio do Restelo e em Algés (4–16 anos).</li>
+              <li>Sport Algés e Dafundo — clube multidesportivo, natação particularmente valorizada.</li>
+              <li>Liga dos Melhoramentos e Recreios de Algés — patinagem, ginástica e atividade motora adaptada.</li>
+              <li>Formato sugerido: "semana experimental" no início do ano letivo.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="axis-card">
+          <summary>
+            <div class="axis-left">
+              <span class="mono" style="background:var(--sunrise-3)">IN</span>
+              <div>
+                <div class="axis-title">Inglês a partir do 1.º ano</div>
+                <div class="axis-sub">Como AEC, com garantia de qualidade</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body">
+            <ul>
+              <li>Confirmar junto da Junta de Freguesia se o pacote AAAF/CAF/AEC já inclui Inglês, e a partir de que ano.</li>
+              <li>Se não incluir, pedido formal à Direção e à Junta para introdução desde o 1.º ano.</li>
+              <li>Alternativa: negociação direta com escola de línguas para atividade paga por adesão (ex. British Council, CIAL).</li>
+            </ul>
+            <p class="axis-note">Qualquer AEC proposta deve seguir as recomendações da Direção-Geral da Educação (Ofício-Circular DGE/2016/3210): caráter lúdico e facultativo, sem promover TPC, escolha livre dos alunos e avaliação formativa — não estandardizada.</p>
+          </div>
+        </details>
+
+        <details class="axis-card">
+          <summary>
+            <div class="axis-left">
+              <span class="mono" style="background:var(--sunrise-3)">CS</span>
+              <div>
+                <div class="axis-title">Cultura, ciência e sustentabilidade</div>
+                <div class="axis-sub">Biblioteca, hortas, museus e clubes temáticos</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body">
+            <ul>
+              <li>Parceria com a Biblioteca de Belém ou clube de leitura com autores locais.</li>
+              <li>Hortas escolares com o programa "Green Teachers" da Câmara Municipal de Lisboa.</li>
+              <li>Visitas ao Jardim Botânico Tropical, Oceanário, Fundação Champalimaud, CCB ou Museu dos Coches.</li>
+              <li>Clube de xadrez, robótica ou programação, com parcerias locais.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="axis-card">
+          <summary>
+            <div class="axis-left">
+              <span class="mono" style="background:var(--sunrise-3)">CV</span>
+              <div>
+                <div class="axis-title">Convívio e angariação de fundos</div>
+                <div class="axis-sub">Feiras, mercados e festas com propósito</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body">
+            <ul>
+              <li>Feira do livro / troca de manuais e material escolar usado entre famílias.</li>
+              <li>Mercado de Natal, Festa de Verão e Rastrilho, com angariação para objetivos concretos.</li>
+              <li>Avaliar uma solução de CAF em dias de greve, com pagamento diário à semelhança das férias.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+
+      <!-- Mais ideias -->
+      <div class="cat-group reveal">
+        <div class="cat-title">
+          <span class="swatch" style="background:var(--moss)"></span>
+          <h3>Mais ideias a explorar</h3>
+          <span class="count">5 propostas novas</span>
+        </div>
+
+        <details class="axis-card">
+          <summary>
+            <div class="axis-left">
+              <span class="mono" style="background:var(--moss)">CU</span>
+              <div>
+                <div class="axis-title">Um único canal de comunicação</div>
+                <div class="axis-sub">Reduzir a dispersão entre grupos, emails e circulares</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body">
+            <ul>
+              <li>Avaliar uma plataforma única (app ou site) para comunicação escola-família, reduzindo a dispersão entre grupos de WhatsApp, emails e circulares em papel.</li>
+              <li>Centralizar aí o calendário de eventos, circulares e o próprio quadro de progresso da Associação.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="axis-card">
+          <summary>
+            <div class="axis-left">
+              <span class="mono" style="background:var(--moss)">AP</span>
+              <div>
+                <div class="axis-title">Apadrinhamento entre turmas</div>
+                <div class="axis-sub">Alunos mais velhos a acompanhar os mais novos</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body">
+            <ul>
+              <li>Programa simples de apadrinhamento entre alunos do 4.º ano e do 1.º ano, ou entre o 1.º ciclo e o Pré-Escolar, para facilitar a integração dos mais novos.</li>
+              <li>Reforça o sentido de comunidade e de entreajuda entre as crianças da escola.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="axis-card">
+          <summary>
+            <div class="axis-left">
+              <span class="mono" style="background:var(--moss)">SD</span>
+              <div>
+                <div class="axis-title">Literacia digital e segurança online</div>
+                <div class="axis-sub">Sessões para pais e para crianças</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body">
+            <ul>
+              <li>Sessões para pais sobre uso saudável de ecrãs, redes sociais e primeiros telemóveis.</li>
+              <li>Ações de sensibilização para as crianças mais velhas sobre segurança online, adequadas à idade.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="axis-card">
+          <summary>
+            <div class="axis-left">
+              <span class="mono" style="background:var(--moss)">BE</span>
+              <div>
+                <div class="axis-title">Biblioteca e sala de estudo com horário alargado</div>
+                <div class="axis-sub">Um espaço tranquilo depois das aulas</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body">
+            <ul>
+              <li>Avaliar, com a coordenação, a possibilidade de abertura pontual da biblioteca ou de uma sala de estudo após as aulas, com apoio de voluntários do Banco de Talentos.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="axis-card">
+          <summary>
+            <div class="axis-left">
+              <span class="mono" style="background:var(--moss)">KA</span>
+              <div>
+                <div class="axis-title">Kit de acolhimento para famílias novas</div>
+                <div class="axis-sub">Um "novo começo" mais simples para quem chega</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body">
+            <ul>
+              <li>Guia prático de boas-vindas com contactos essenciais, perguntas frequentes e explicação do funcionamento da escola.</li>
+              <li>Complementa as visitas guiadas já organizadas por outras APEE do Agrupamento para famílias novas.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+
+      <div class="band reveal" style="margin-top:36px;">
+        <div>
+          <h3>Tens uma competência para partilhar?</h3>
+          <p>O Banco de Talentos das Famílias está aberto — uma ideia, um contacto ou uma aula surpresa já ajudam.</p>
+        </div>
+        <a class="btn btn-dark" href="mailto:apee.bairro.restelo@gmail.com">Quero ajudar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRESSO -->
+  <section id="progresso" class="alt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Acompanhamento em tempo real</p>
+        <h2>Quadro de objetivos e atividades</h2>
+        <p>Marca os objetivos à medida que forem sendo cumpridos — o gráfico atualiza-se automaticamente. (As marcações não ficam guardadas ao fechar a página; servem para acompanhamento em reunião ou apresentação.)</p>
+      </div>
+
+      <div class="progress-dash reveal">
+        <div class="progress-ring-wrap">
+          <svg class="progress-ring" viewBox="0 0 160 160" aria-hidden="true">
+            <circle cx="80" cy="80" r="70" fill="none" stroke="#E4E7DE" stroke-width="14"/>
+            <circle id="ringFg" cx="80" cy="80" r="70" fill="none" stroke="url(#ringGrad)" stroke-width="14" stroke-linecap="round" stroke-dasharray="439.8" stroke-dashoffset="439.8" transform="rotate(-90 80 80)"/>
+            <defs>
+              <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#FF8B5E"/>
+                <stop offset="100%" stop-color="#FFC468"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <div class="progress-ring-label">
+            <span id="ringPercent">0%</span>
+            <small>concluído</small>
+          </div>
+        </div>
+        <div class="progress-cats" id="progressCats"><!-- filled by JS --></div>
+      </div>
+
+      <div class="quadro-groups" id="quadroGroups"><!-- filled by JS --></div>
+
+      <p class="contact-note reveal" style="margin-top:22px;">Nota: este quadro é uma ferramenta de trabalho para a equipa candidata. Após a tomada de posse, os itens concluídos podem passar a constar do relatório de atividades apresentado em Assembleia Geral.</p>
+    </div>
+  </section>
+
+  <!-- ORGANIZACAO -->
+  <section id="organizacao">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Como nos organizamos</p>
+        <h2>Organização e gestão</h2>
+        <p>Dois organogramas: a estrutura de gestão do Agrupamento (para situar quem é quem) e a estrutura da própria Associação, ainda por preencher.</p>
+      </div>
+
+      <h3 class="org-subtitle reveal">Gestão do Agrupamento de Escolas do Restelo</h3>
+      <div class="orgchart reveal" aria-label="Organograma do Agrupamento de Escolas">
+        <div class="org-level">
+          <div class="org-box org-primary">Diretor(a) do Agrupamento</div>
+        </div>
+        <div class="org-connector"></div>
+        <div class="org-level org-level-wide">
+          <div class="org-box">Subdiretor(a) e Adjuntos</div>
+          <div class="org-box">Conselho Pedagógico</div>
+          <div class="org-box">Conselho Administrativo</div>
+        </div>
+        <div class="org-connector"></div>
+        <div class="org-level org-level-wide">
+          <div class="org-box">Coordenadores de Estabelecimento</div>
+          <div class="org-box">Departamentos Curriculares</div>
+          <div class="org-box">SPO &amp; Educação Especial (EMAEI)</div>
+        </div>
+        <div class="org-connector org-connector-dashed"></div>
+        <div class="org-level">
+          <div class="org-box org-dashed">Conselho Geral <span>— com representação da Associação de Pais</span></div>
+        </div>
+      </div>
+      <p class="org-caption reveal">Estrutura de referência com base no regime de autonomia, administração e gestão dos estabelecimentos públicos de ensino. A organização concreta pode ter variações — a confirmar junto da Direção do Agrupamento.</p>
+
+      <h3 class="org-subtitle reveal" style="margin-top:56px;">Associação de Pais — a preencher</h3>
+      <div class="orgchart reveal" aria-label="Organograma da Associação de Pais, por preencher">
+        <div class="org-level">
+          <div class="org-box org-tbd">Presidente<span>[nome a definir]</span></div>
+        </div>
+        <div class="org-connector"></div>
+        <div class="org-level org-level-wide">
+          <div class="org-box org-tbd">Vice-Presidente<span>[nome a definir]</span></div>
+          <div class="org-box org-tbd">Secretário(a)<span>[nome a definir]</span></div>
+          <div class="org-box org-tbd">Tesoureiro(a)<span>[nome a definir]</span></div>
+        </div>
+        <div class="org-connector"></div>
+        <div class="org-level org-level-wide">
+          <div class="org-box org-tbd">Vogais por eixo<span>[nomes a definir]</span></div>
+          <div class="org-box org-tbd">Conselho Fiscal<span>[nomes a definir]</span></div>
+          <div class="org-box org-tbd">Representantes por ano<span>[nomes a definir]</span></div>
+        </div>
+      </div>
+      <p class="org-caption reveal">Queres ver o teu nome aqui? O formulário "Juntar-me" mais abaixo é o primeiro passo.</p>
+    </div>
+  </section>
+
+  <!-- DOCUMENTOS -->
+  <section id="documentos" class="alt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Guia prático</p>
+        <h2>Documentos e processos essenciais</h2>
+        <p>Informação de partida sobre temas que geram mais dúvidas às famílias. Não substitui aconselhamento jurídico — em caso de dúvida, confirmar sempre junto da escola, do Agrupamento ou da entidade competente.</p>
+      </div>
+
+      <div class="doc-grid">
+        <details class="axis-card doc-card">
+          <summary>
+            <div class="axis-left">
+              <span class="mono" style="background:var(--ink)">AF</span>
+              <div>
+                <div class="axis-title">Abono de família — comunicação à escola</div>
+                <div class="axis-sub">Ação Social Escolar e prova de frequência</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body">
+            <p>O abono de família é atribuído pela Segurança Social, mas para aceder à Ação Social Escolar (refeitório, livros e material a preços reduzidos ou gratuitos) é preciso formalizar todos os anos uma candidatura própria junto da escola.</p>
+            <ul>
+              <li>Candidatura entregue nos serviços de ação social escolar do Agrupamento, no ato da matrícula ou renovação (ou via plataforma SIGA, separador "Candidaturas/Ação Social Escolar").</li>
+              <li>Deve ser acompanhada de declaração da Segurança Social com o escalão do abono de família, pedida no próprio mês da candidatura.</li>
+              <li>Trabalhadores da função pública apresentam declaração emitida pela entidade empregadora.</li>
+              <li>Se o rendimento do agregado mudar durante o ano, é possível pedir reavaliação do escalão junto dos serviços de ação social escolar.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="axis-card doc-card">
+          <summary>
+            <div class="axis-left">
+              <span class="mono" style="background:var(--ink)">TP</span>
+              <div>
+                <div class="axis-title">Pedido de terapeutas — interno e externo</div>
+                <div class="axis-sub">SPO, CRI e apoios privados</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body">
+            <p><strong>Apoio interno (SPO):</strong></p>
+            <ul>
+              <li>O Serviço de Psicologia e Orientação (SPO) pode ser acionado pelo professor titular de turma, pelo diretor de turma, pela educadora ou diretamente pelos pais/encarregados de educação.</li>
+              <li>O pedido faz-se geralmente através de uma ficha de encaminhamento própria, solicitada ao professor titular/diretor de turma, com a documentação relevante anexada.</li>
+              <li>Quando a situação exige apoio clínico mais especializado (psicologia clínica, pedopsiquiatria), o SPO encaminha para os serviços adequados.</li>
+            </ul>
+            <p><strong>Apoio externo (terapia da fala, terapia ocupacional, etc.):</strong></p>
+            <ul>
+              <li>Pode ser prestado por técnicos do Centro de Recursos para a Inclusão (CRI) protocolado com o Agrupamento, no âmbito das medidas definidas no RTP.</li>
+              <li>Em alternativa, através de clínicas privadas ou do SNS, por iniciativa da família.</li>
+              <li>Existe um subsídio de educação especial da Segurança Social que pode comparticipar terapias como a terapia da fala, mediante certificado de incapacidade e declaração da escola ou do técnico.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="axis-card doc-card">
+          <summary>
+            <div class="axis-left">
+              <span class="mono" style="background:var(--ink)">NE</span>
+              <div>
+                <div class="axis-title">Avaliação para necessidades educativas especiais</div>
+                <div class="axis-sub">Processo de referenciação (Decreto-Lei n.º 54/2018)</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body">
+            <ul>
+              <li>Qualquer pessoa pode identificar a necessidade de apoio — pais, docentes, técnicos ou serviços de intervenção precoce — apresentando a situação por escrito ao diretor da escola.</li>
+              <li>O diretor tem 3 dias úteis para pedir à equipa multidisciplinar de apoio à educação inclusiva (EMAEI) a elaboração de um relatório técnico-pedagógico.</li>
+              <li>Se só forem necessárias medidas universais, o processo é devolvido ao professor titular/diretor de turma, que informa os pais.</li>
+              <li>Se forem propostas medidas seletivas ou adicionais, a EMAEI elabora o Relatório Técnico-Pedagógico (RTP) no prazo máximo de 30 dias úteis, sempre ouvindo os pais.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="axis-card doc-card">
+          <summary>
+            <div class="axis-left">
+              <span class="mono" style="background:var(--ink)">RTP</span>
+              <div>
+                <div class="axis-title">RTP — Relatório Técnico-Pedagógico</div>
+                <div class="axis-sub">O que é e quais os direitos dos pais</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body">
+            <p>O RTP é o documento que fundamenta a mobilização de medidas seletivas e/ou adicionais de suporte à aprendizagem e à inclusão, elaborado pela EMAEI. Quando propõe adaptações curriculares significativas, é acompanhado de um Programa Educativo Individual (PEI).</p>
+            <ul>
+              <li>Os pais têm o direito de participar nas reuniões da equipa multidisciplinar e na elaboração do RTP.</li>
+              <li>O RTP é submetido à aprovação dos pais, datado e assinado por estes (e pelo aluno, sempre que possível), e homologado pelo diretor, ouvido o Conselho Pedagógico.</li>
+              <li>Os pais têm direito a receber cópia do RTP e do PEI, a consultar o processo individual do filho e a pedir a revisão do PEI.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="axis-card doc-card">
+          <summary>
+            <div class="axis-left">
+              <span class="mono" style="background:var(--ink)">LG</span>
+              <div>
+                <div class="axis-title">Legislação para candidaturas a Associações de Pais</div>
+                <div class="axis-sub">Enquadramento legal da própria Associação</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body">
+            <ul>
+              <li>O regime das Associações de Pais está definido no Decreto-Lei n.º 372/90, de 27 de novembro, republicado em anexo à Lei n.º 29/2006, de 4 de julho.</li>
+              <li>As associações têm autonomia para elaborar os seus estatutos, eleger os seus corpos sociais e gerir o seu património e plano de atividades.</li>
+              <li>Têm o direito de participar na definição da política educativa da escola, de reunir com os órgãos de gestão e de participar na eleição dos representantes dos pais no Conselho Geral.</li>
+              <li>Como contrapartida, têm o dever de prestar contas — relatório de atividades e de contas — sempre que recebam apoios do Estado ou de outras entidades.</li>
+              <li>A CONFAP disponibiliza modelos de estatutos e apoio ao processo de constituição e eleição junto do Registo Nacional de Pessoas Coletivas e da Secretaria-Geral do Ministério da Educação.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="axis-card doc-card">
+          <summary>
+            <div class="axis-left">
+              <span class="mono" style="background:var(--ink)">OU</span>
+              <div>
+                <div class="axis-title">Outros aspetos fundamentais</div>
+                <div class="axis-sub">Matrículas, Conselho Geral e mais</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body">
+            <ul>
+              <li>Matrículas e renovações — prazos anuais definidos pela Direção-Geral dos Estabelecimentos Escolares, a confirmar junto do Agrupamento.</li>
+              <li>Conselho Geral — órgão de topo do Agrupamento, com representação de pais, docentes, não docentes, município e comunidade; a Associação de Pais participa na eleição dos representantes dos pais.</li>
+              <li>Seguro escolar — cobre acidentes ocorridos em atividades letivas e de complemento curricular; compensações e procedimentos a confirmar junto dos serviços administrativos.</li>
+              <li>Reclamações formais — devem ser dirigidas por escrito à Direção do Agrupamento, com registo de data, seguindo depois via hierárquica (DGEstE) se necessário.</li>
+              <li>Regulamento Interno e Projeto Educativo — documentos estruturantes da escola, a cuja elaboração a Associação de Pais tem direito de participar.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Espaço aberto</p>
+        <h2>Perguntas e respostas</h2>
+        <p>Dúvidas frequentes das famílias. Não encontraste a tua? Envia-nos a pergunta — respondemos e acrescentamos aqui.</p>
+      </div>
+
+      <div class="doc-grid">
+        <details class="axis-card doc-card">
+          <summary>
+            <div class="axis-left">
+              <div>
+                <div class="axis-title">Como posso tornar-me associado(a)?</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body"><p>Basta preencher o boletim de inscrição da Associação (ver formulário "Juntar-me" mais abaixo) — não é preciso disponibilidade para integrar os órgãos sociais, todas as famílias são bem-vindas como associadas.</p></div>
+        </details>
+        <details class="axis-card doc-card">
+          <summary>
+            <div class="axis-left">
+              <div>
+                <div class="axis-title">É preciso pagar quota?</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body"><p>O valor e a existência de quota serão discutidos e aprovados em Assembleia Geral, e comunicados com transparência a todas as famílias antes de qualquer cobrança.</p></div>
+        </details>
+        <details class="axis-card doc-card">
+          <summary>
+            <div class="axis-left">
+              <div>
+                <div class="axis-title">O meu filho pode precisar de apoio especializado — por onde começo?</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body"><p>Fala com o professor titular de turma ou a educadora, que pode encaminhar para o SPO ou iniciar o processo de referenciação junto do diretor. Consulta também a secção "Documentos e processos essenciais" acima — e conta connosco para esclarecer dúvidas.</p></div>
+        </details>
+        <details class="axis-card doc-card">
+          <summary>
+            <div class="axis-left">
+              <div>
+                <div class="axis-title">Como comunico um problema com a escola ou uma sugestão?</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body"><p>Podes falar diretamente com a coordenação, ou escrever-nos — ajudamos a formalizar o pedido junto da Direção do Agrupamento e a acompanhar a resposta.</p></div>
+        </details>
+        <details class="axis-card doc-card">
+          <summary>
+            <div class="axis-left">
+              <div>
+                <div class="axis-title">Não tenho muito tempo — ainda assim posso ajudar?</div>
+              </div>
+            </div>
+            <span class="chev"></span>
+          </summary>
+          <div class="axis-body"><p>Sim — o Banco de Talentos das Famílias aceita contributos pontuais: uma ideia, um contacto, uma competência partilhada uma única vez. Todas as formas de ajudar contam.</p></div>
+        </details>
+      </div>
+
+      <div class="band reveal" style="margin-top:28px; background:var(--ink);">
+        <div>
+          <h3>Tens uma pergunta que não está aqui?</h3>
+          <p>Escreve-nos — respondemos diretamente e, se for útil a todos, acrescentamos a esta lista.</p>
+        </div>
+        <a class="btn btn-primary" href="mailto:apee.bairro.restelo@gmail.com?subject=Pergunta%20à%20Associa%C3%A7%C3%A3o%20de%20Pais">Enviar pergunta</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTOS -->
+  <section id="contactos" class="alt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Rede de apoio</p>
+        <h2>Contactos institucionais</h2>
+        <p>A rede que já existe à nossa volta — a base de partida para todas as reivindicações.</p>
+      </div>
+      <div class="contact-grid reveal">
+        <div class="contact-item"><div class="who">EB do Bairro do Restelo</div><div class="how">213 019 564 · escolabairrorestelo@gmail.com</div></div>
+        <div class="contact-item"><div class="who">Coordenadora Pré-Escolar e 1.º Ciclo (Helena Martins)</div><div class="how">927 213 785 / 927 213 809</div></div>
+        <div class="contact-item"><div class="who">Agrupamento de Escolas do Restelo (Direção)</div><div class="how">213 016 528 · direcao@aerestelo.pt</div></div>
+        <div class="contact-item"><div class="who">Contacto pais/EE (Fernanda Cardoso)</div><div class="how">Ext. 411 · fernandacardoso@aerestelo.pt</div></div>
+        <div class="contact-item"><div class="who">APEE existente (Restelo + JI Sta. Maria de Belém)</div><div class="how">apee.bairro.restelo@gmail.com</div></div>
+        <div class="contact-item"><div class="who">Junta de Freguesia de Belém</div><div class="how">210 132 330 · secretaria@jf-belem.pt</div></div>
+        <div class="contact-item"><div class="who">Junta de Freguesia — Educação / AAAF-CAF</div><div class="how">escola.belem@jf-belem.pt</div></div>
+        <div class="contact-item"><div class="who">CONFAP</div><div class="how">917 893 573 · geral@confap.pt</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CRONOGRAMA -->
+  <section id="cronograma">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Plano de ação</p>
+        <h2>Cronograma 2026/2027</h2>
+      </div>
+      <div class="timeline reveal">
+        <div class="tl-item">
+          <div class="when">Setembro</div>
+          <p>Apresentação da lista, lançamento do inquérito aos pais e reunião inicial com a coordenação e a Direção do Agrupamento.</p>
+        </div>
+        <div class="tl-item">
+          <div class="when">Outubro – Novembro</div>
+          <p>Constituição formal dos órgãos, definição de responsáveis por eixo e arranque das parcerias desportivas e de AEC.</p>
+        </div>
+        <div class="tl-item">
+          <div class="when">Dezembro</div>
+          <p>Mercado de Natal e primeira apresentação pública de contas.</p>
+        </div>
+        <div class="tl-item">
+          <div class="when">Janeiro – Março</div>
+          <p>Formações facultativas (saúde, primeiros socorros, gestão emocional) e acompanhamento das reivindicações de NEE e infraestruturas.</p>
+        </div>
+        <div class="tl-item">
+          <div class="when">Abril – Junho</div>
+          <p>Festa de Verão, balanço do ano letivo e preparação da Assembleia Geral de contas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JUNTAR-ME -->
+  <section id="juntar">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Quero fazer parte</p>
+        <h2>Junta-te a este novo começo</h2>
+        <p>Preenche o formulário — não é preciso disponibilidade total. Uma ideia, uma competência ou uma ajuda pontual já contam.</p>
+      </div>
+      <form class="form-shell reveal" id="joinForm">
+        <div class="form-row">
+          <label for="jName">Nome</label>
+          <input type="text" id="jName" name="Nome" required>
+        </div>
+        <div class="form-row">
+          <label for="jContact">Email ou telefone</label>
+          <input type="text" id="jContact" name="Contacto" required>
+        </div>
+        <div class="form-row">
+          <label for="jChild">Ano(s)/turma(s) do(s) educando(s)</label>
+          <input type="text" id="jChild" name="Turma">
+        </div>
+        <div class="form-row">
+          <label>Como gostarias de ajudar?</label>
+          <div class="form-check-grid">
+            <label class="form-check"><input type="checkbox" name="Interesse" value="Integrar os órgãos da Associação"> Integrar os órgãos da Associação</label>
+            <label class="form-check"><input type="checkbox" name="Interesse" value="Banco de Talentos (aula/competência)"> Banco de Talentos (aula/competência)</label>
+            <label class="form-check"><input type="checkbox" name="Interesse" value="Ajuda pontual em eventos"> Ajuda pontual em eventos</label>
+            <label class="form-check"><input type="checkbox" name="Interesse" value="Contactos ou parcerias"> Contactos ou parcerias</label>
+            <label class="form-check"><input type="checkbox" name="Interesse" value="Apoio na comunicação/redes"> Apoio na comunicação/redes</label>
+            <label class="form-check"><input type="checkbox" name="Interesse" value="Ainda não sei, quero saber mais"> Ainda não sei, quero saber mais</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="jMsg">Mensagem (opcional)</label>
+          <textarea id="jMsg" name="Mensagem" placeholder="Conta-nos mais, se quiseres."></textarea>
+        </div>
+        <div class="form-submit-row">
+          <button type="submit" class="btn btn-primary">Enviar por email</button>
+          <span class="form-note">Ao enviar, abre-se o teu cliente de email com os dados preenchidos, para envio para apee.bairro.restelo@gmail.com.</span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- INQUERITO -->
+  <section id="inquerito" class="alt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">A ouvir as famílias</p>
+        <h2>Inquérito aos pais</h2>
+        <p>A tua opinião ajuda a priorizar os eixos de atuação. Podes responder já aqui.</p>
+      </div>
+      <form class="form-shell reveal" id="surveyForm">
+
+        <div class="qa-block">
+          <div class="qtitle">1. Que atividades extracurriculares gostariam de ver na escola?</div>
+          <div class="form-check-grid">
+            <label class="form-check"><input type="checkbox" name="Q1" value="Desporto"> Desporto</label>
+            <label class="form-check"><input type="checkbox" name="Q1" value="Línguas"> Línguas</label>
+            <label class="form-check"><input type="checkbox" name="Q1" value="Arte"> Arte</label>
+            <label class="form-check"><input type="checkbox" name="Q1" value="Ciência"> Ciência</label>
+          </div>
+        </div>
+
+        <div class="qa-block">
+          <div class="qtitle">2. Disponibilidade para voluntariado</div>
+          <div class="form-radio-row">
+            <label class="form-radio"><input type="radio" name="Q2" value="Sim, com regularidade"> Sim, com regularidade</label>
+            <label class="form-radio"><input type="radio" name="Q2" value="Sim, pontualmente"> Sim, pontualmente</label>
+            <label class="form-radio"><input type="radio" name="Q2" value="Neste momento não"> Neste momento não</label>
+          </div>
+        </div>
+
+        <div class="qa-block">
+          <div class="qtitle">3. Perceção sobre segurança e supervisão nos intervalos</div>
+          <div class="form-radio-row">
+            <label class="form-radio"><input type="radio" name="Q3" value="Muito boa"> Muito boa</label>
+            <label class="form-radio"><input type="radio" name="Q3" value="Suficiente"> Suficiente</label>
+            <label class="form-radio"><input type="radio" name="Q3" value="A melhorar"> A melhorar</label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="q4">4. Estado das instalações — pontos a melhorar</label>
+          <textarea id="q4" name="Q4" placeholder="Casas de banho, refeitório, recreio…"></textarea>
+        </div>
+
+        <div class="qa-block">
+          <div class="qtitle">5. Interesse em formações facultativas</div>
+          <div class="form-check-grid">
+            <label class="form-check"><input type="checkbox" name="Q5" value="Primeiros socorros"> Primeiros socorros</label>
+            <label class="form-check"><input type="checkbox" name="Q5" value="Gestão emocional"> Gestão emocional</label>
+            <label class="form-check"><input type="checkbox" name="Q5" value="Psicologia"> Psicologia</label>
+            <label class="form-check"><input type="checkbox" name="Q5" value="Apoio extracurricular"> Apoio extracurricular</label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="q6">6. Filhos com necessidades educativas especiais — que apoios sentem falta?</label>
+          <textarea id="q6" name="Q6"></textarea>
+        </div>
+
+        <div class="qa-block">
+          <div class="qtitle">7. Disponibilidade para contribuir financeiramente para atividades extra</div>
+          <div class="form-radio-row">
+            <label class="form-radio"><input type="radio" name="Q7" value="Sim"> Sim</label>
+            <label class="form-radio"><input type="radio" name="Q7" value="Depende da atividade"> Depende da atividade</label>
+            <label class="form-radio"><input type="radio" name="Q7" value="Não"> Não</label>
+          </div>
+        </div>
+
+        <div class="form-submit-row">
+          <button type="submit" class="btn btn-primary">Enviar respostas</button>
+          <span class="form-note">Abre o teu cliente de email com as respostas preenchidas, prontas a enviar.</span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- CLOSING -->
+<section class="closing">
+  <div class="wrap closing-inner">
+    <p class="eyebrow on-dark">Mais do que pais, somos uma comunidade</p>
+    <h2>Vamos construir juntos a APEE 2026/2027</h2>
+    <p>Ideias, tempo, contactos ou apenas vontade de ajudar — todas as contribuições contam para este novo começo.</p>
+    <a class="btn btn-primary" href="mailto:apee.bairro.restelo@gmail.com">apee.bairro.restelo@gmail.com</a>
+    <footer class="legal">
+      <span>APEE EB do Bairro do Restelo · Candidatura 2026/2027</span>
+      <span>Agrupamento de Escolas do Restelo</span>
+    </footer>
+  </div>
+  <div class="dawn" aria-hidden="true">
+    <svg viewBox="0 0 1200 340" preserveAspectRatio="none">
+      <circle cx="600" cy="330" r="150" fill="url(#sunGrad)" opacity="0.55"/>
+      <path d="M0,260 C150,210 300,240 460,215 C620,190 700,235 860,205 C1000,180 1100,215 1200,195 L1200,340 L0,340 Z" fill="#0A2231"/>
+    </svg>
+  </div>
+</section>
+
+<script>
+  // Mobile nav toggle
+  const burger = document.getElementById('burgerBtn');
+  const navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
+  }));
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('in'));
+  }
+
+  // ---------------- Progress dashboard ----------------
+  const QUADRO = [
+    { cat: 'Governação & transparência', color: 'var(--ink)', items: [
+      'Garantir lugar fixo no Conselho Geral',
+      'Criar canal regular com a Direção (newsletter/reunião trimestral)',
+      'Filiar a Associação na CONFAP',
+      'Apresentar contas em Assembleia Geral',
+    ]},
+    { cat: 'Segurança & bem-estar', color: 'var(--moss)', items: [
+      'Implementar registo de entrada/saída no portão',
+      'Reportar formalmente o estado das casas de banho',
+      'Lançar levantamento interno de crianças com NEE',
+      'Agendar primeira formação de Primeiros Socorros (CVP)',
+    ]},
+    { cat: 'Comunidade & atividades', color: 'var(--sunrise-3)', items: [
+      'Lançar o Banco de Talentos das Famílias',
+      'Confirmar oferta de Inglês como AEC junto da Junta',
+      'Organizar semana experimental de desportos',
+      'Realizar o Mercado de Natal',
+      'Realizar a Festa de Verão',
+      'Lançar o inquérito aos pais',
+    ]},
+  ];
+
+  const quadroGroupsEl = document.getElementById('quadroGroups');
+  const progressCatsEl = document.getElementById('progressCats');
+
+  function slugify(s){ return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-'); }
+
+  QUADRO.forEach((group, gi) => {
+    const groupDiv = document.createElement('div');
+    groupDiv.className = 'qgroup';
+    const title = document.createElement('div');
+    title.className = 'qgroup-title';
+    title.innerHTML = `<span class="swatch" style="background:${group.color}"></span><span>${group.cat}</span>`;
+    groupDiv.appendChild(title);
+    const list = document.createElement('div');
+    list.className = 'qlist';
+    group.items.forEach((item, ii) => {
+      const id = 'q-' + gi + '-' + ii;
+      const row = document.createElement('label');
+      row.className = 'qitem';
+      row.setAttribute('for', id);
+      row.innerHTML = `<input type="checkbox" id="${id}" data-group="${gi}"><span class="qlabel">${item}</span>`;
+      list.appendChild(row);
+    });
+    groupDiv.appendChild(list);
+    quadroGroupsEl.appendChild(groupDiv);
+
+    const catRow = document.createElement('div');
+    catRow.className = 'pcat-row';
+    catRow.innerHTML = `
+      <div class="pcat-top"><span>${group.cat}</span><span class="pct" id="pct-${gi}">0/${group.items.length}</span></div>
+      <div class="pcat-bar"><div class="pcat-bar-fg" id="bar-${gi}" style="width:0%; background:${group.color}"></div></div>
+    `;
+    progressCatsEl.appendChild(catRow);
+  });
+
+  const ringFg = document.getElementById('ringFg');
+  const ringPercent = document.getElementById('ringPercent');
+  const RING_CIRC = 439.8;
+
+  function updateProgress(){
+    let totalDone = 0, totalAll = 0;
+    QUADRO.forEach((group, gi) => {
+      const boxes = quadroGroupsEl.querySelectorAll(`input[data-group="${gi}"]`);
+      let done = 0;
+      boxes.forEach(b => { if (b.checked) done++; });
+      const total = group.items.length;
+      totalDone += done; totalAll += total;
+      document.getElementById(`pct-${gi}`).textContent = `${done}/${total}`;
+      document.getElementById(`bar-${gi}`).style.width = (total ? (done/total*100) : 0) + '%';
+    });
+    const overall = totalAll ? Math.round(totalDone/totalAll*100) : 0;
+    ringPercent.textContent = overall + '%';
+    ringFg.style.strokeDashoffset = RING_CIRC - (RING_CIRC * overall / 100);
+  }
+
+  quadroGroupsEl.addEventListener('change', (e) => {
+    if (e.target.matches('input[type=checkbox]')) {
+      e.target.closest('.qitem').classList.toggle('done', e.target.checked);
+      updateProgress();
+    }
+  });
+  updateProgress();
+
+  // ---------------- Mailto forms ----------------
+  function formToMailto(form, toAddress, subject){
+    const data = new FormData(form);
+    const lines = [];
+    const seen = {};
+    for (const [key, value] of data.entries()) {
+      if (!value) continue;
+      if (seen[key]) { seen[key] += ', ' + value; }
+      else { seen[key] = value; }
+    }
+    Object.keys(seen).forEach(k => lines.push(k + ': ' + seen[k]));
+    const body = encodeURIComponent(lines.join('\n'));
+    const subj = encodeURIComponent(subject);
+    return `mailto:${toAddress}?subject=${subj}&body=${body}`;
+  }
+
+  const joinForm = document.getElementById('joinForm');
+  if (joinForm) {
+    joinForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      window.location.href = formToMailto(joinForm, 'apee.bairro.restelo@gmail.com', 'Quero fazer parte da APEE — Novo Recomeço');
+    });
+  }
+
+  const surveyForm = document.getElementById('surveyForm');
+  if (surveyForm) {
+    surveyForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      window.location.href = formToMailto(surveyForm, 'apee.bairro.restelo@gmail.com', 'Respostas ao inquérito aos pais');
+    });
+  }
+
+</script>
+
+</body>
+</html>
